@@ -1,1 +1,1 @@
-# amplifon-linx-quattro
+# amplifon-signia-nx
