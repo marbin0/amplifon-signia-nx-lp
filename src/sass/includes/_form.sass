@@ -1,0 +1,76 @@
+form
+    position: relative
+    margin-left: 20px
+    // max-width: 420px
+    border: 2px solid $rot
+    z-index: 999
+    background: #fff
+    height: 625px
+    @media (max-width: 500px)
+        height: 670px
+    .formHeader
+        background: $gradient3
+        padding: 10px 10px 50px
+        text-align: center
+        position: relative
+        &:before
+            content: ""
+            position: absolute
+            left: 0
+            bottom: -1px
+            width: 100%
+            height: 25px
+            background: url('../img/abdecker.svg') center no-repeat
+            background-size: cover
+            @media (min-width: 670px) and (max-width: 980px)
+                height: 35px
+            
+        h2
+            color: white
+            font-size: 1.8rem
+            line-height: 1.2
+            margin-bottom: 15px
+            span
+                font-family: $font-family-headline-light!important
+                font-size: inherit
+                color: white
+                line-height: inherit
+        h4
+            color: white
+            span
+                color: inherit
+    .formContent
+        padding: 20px
+        max-width: 380px
+        margin: 0 auto
+        background: #fff
+        height: 70%
+        @media (max-width: 500px)
+            height: 68%
+   
+        .question
+            
+            display: none
+            text-align: center
+            &.active
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                height: 100%
+            input[type="radio"]
+                display: none
+                &:checked~label
+                    background: $rot
+                    color: white
+                    border: 2px solid $lila
+            strong
+                font-size: 1.2rem
+                line-height: 1.3
+            p
+                font-size: 0.925rem
+
+.alert
+    color: white
+    background: $rot
+    padding: 5px
+    border: 2px solid darken($rot, 15%)

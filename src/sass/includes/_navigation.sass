@@ -1,0 +1,102 @@
+nav
+    height: 100px
+    width: 100%
+    background: $gradient3
+    .container
+        display: flex
+        align-items: center
+        // padding-left: 30px
+        justify-content: space-between
+        max-width: 1100px
+        margin: 0 auto
+        height: 100%
+        
+        #logo   
+            height: 50px
+            display: block
+            img
+                height: 100%
+            p 
+                display: none !important
+                color: white
+                font-size: 1em
+                line-height: 0
+                text-align: center
+                margin-top: 4px
+                @media (max-width: 1024px)
+                    font-size: 0.8em
+
+        #menu
+            height: 100%
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            .zufriedenheit
+                max-height: 85%
+                display: inline-block
+                margin-right: 20px
+            .hotline
+                padding: 10px 0
+                height: 100%
+                @media (max-width: 1140px)
+                    padding: 10px 20px
+        
+                h3
+                    font-size: 1.8rem
+                    color: white
+                    margin-bottom: 8px
+                    display: inline-block
+                    .phone
+                        width: 27px
+                        position: relative
+                        top: 3px
+                .sternchen
+                    margin-bottom: 8px
+                    font-size: 0.75rem
+                    color: white
+    @media (max-width: 940px)
+        height: auto
+        flex-direction: column
+        
+        .container
+            padding-left: 0
+            display: block
+            text-align: center
+            #logo
+                height: 72px
+                margin: 0
+                padding: 10px
+                img 
+                    height: 40px
+            #menu
+                background: $rot
+                .zufriedenheit
+                    display: none
+            
+                width: 100%
+                .hotline
+                    padding: 10px
+                    width: 100%
+                    margin-left: 0
+                    display: flex
+                    align-items: flex-end
+                    height: auto
+                    justify-content: center
+                    margin: 0
+                    @media (max-width: 580px)
+                        display: block
+                        text-align: center
+            
+                    h3
+                        font-size: 1rem
+                        margin-right: 20px
+                        margin-bottom: 0
+                        .phone
+                            width: 20px
+                    .sternchen
+                        margin-bottom: 0
+                    p:not(.sternchen)
+                        display: none
+                        font-size: 0.825rem
+

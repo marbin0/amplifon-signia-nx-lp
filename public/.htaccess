@@ -1,0 +1,7 @@
+#RewriteEngine On
+#RewriteCond %{HTTP} !=off
+#RewriteRule ^.*$ http://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+#RewriteRule ^([^\.]+)$ $1.html [NC,L]

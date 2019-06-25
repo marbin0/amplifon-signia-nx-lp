@@ -1,0 +1,129 @@
+#zeit
+  margin: 0 auto
+  padding: 50px 0
+  max-width: 1140px
+
+  .container
+    margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+
+    .col-1
+        flex: 1 0 0
+        min-width: 300px  
+        width: 50%
+        ul
+            @media (max-width: 350px)
+               margin-right: 10px
+            li
+                font-size: 1.5rem
+                font-family: $body-font-family
+                margin: 0 0 20px 40px 
+                position: relative
+                &:last-child
+                    margin-bottom: 0
+                &:before
+                    content: ""
+                    width: 30px
+                    height: 25px
+                    position: absolute
+                    left: -40px
+                    top: 3px
+                    background: url('../img/icn_list.svg') center no-repeat
+                    background-size: contain
+            @media (max-width: 980px)
+                li
+                    font-size: 1rem
+                    margin-left: 20px
+                    &:before
+                        width: 20px
+                        top: 2px
+                        left: -25px
+     
+    .col-2
+      flex: 1 0 0
+      position: relative
+      display: flex
+      flex-direction: column
+      align-items: center    
+      min-width: 300px  
+    
+    img 
+      width: 75%
+  
+
+  video
+    &:-webkit-media-controls-overlay-play-button
+      display: none
+
+  #video
+    video
+      margin-top: 70px
+      width: 100%
+      max-width: 1200px
+    p 
+      text-align: center
+      font-size: 0.825em
+      margin-top: 10px
+    .playpause 
+      background-image: url(../img/play.png)
+      background-repeat: no-repeat
+      width: 50%
+      height: 50%
+      position: absolute
+      left: 0%
+      right: 0%
+      top: 0%
+      bottom: 0%
+      margin: auto
+      background-size: contain
+      background-position: center
+      @media (max-width: 500px)
+        width: 20%
+        height: 20%
+  
+  #hoergeraete
+    h3 
+      text-align: center
+    .container
+      margin: 0 auto
+      display: flex
+      flex-wrap: wrap
+      .col-1
+        flex: 1 0 0
+        width: 50%
+      .col-2
+        flex: 1 0 0
+        position: relative
+        display: flex
+        flex-direction: column
+        align-items: center
+        min-width: auto
+      img 
+        max-width: 200px
+        height: auto
+  @media (max-width: 1200px)
+      padding: 40px
+  @media (max-width: 320px)
+      padding: 28px
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+  #zeit
+    #hoergeraete
+      .container
+        img 
+          height: 100%
+
+#iframeCenter
+  margin: 0 auto
+  width: 1000px
+  &:before
+    content: ""
+    position: absolute
+    z-index: 1
+    display: block
+    right: 0
+    height: 120px
+    width: 220px
+    background: white
+  @media (max-width: 1000px)
+      display: none
