@@ -7,37 +7,40 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="http://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-
- 
   <link rel="shortcut icon" href="assets/img/favicon.ico">
   <link rel="stylesheet" href="assets/css/main.min.css">
+
   <title>Das Signia NX verändert auch Ihr Leben!</title>
+
   <script src="//assets.adobedtm.com/6da552c8ef67c1c7df1a3571abf16fce8626f2ba/satelliteLib-7f7af5e4a0b96bbeecc31588889ce0b4e3221932.js"></script>
   <script type='text/javascript' src='https://origin-media.sivantos.com/apps/snippets.js'></script> 
 </head>
 
+
+
+
 <body>
-  <script>
-    $( document ).ready(function() {
 
-      $('.playpause').click(function () {
-        $(this).fadeOut();
-      });
+  <div class="cookie-banner">
+    <div class="cookie-banner-wrapper">
+      <div class="cookie-banner-content" data-link="https://www.amplifon.com/de/datenschutz">
+        <div class="cookie-content">Um unsere Webseite für Sie optimal zu gestalten und fortlaufend zu verbessern, verwenden wir Cookies. Um einen uneingeschränkten Service zu gewährleisten,  stimmen Sie der Cookie-Nutzung zu. Mehr Informationen erhalten Sie in der <a href="https://www.amplifon.com/de/datenschutz">Datenschutzerklärung</a></div>
+        <span class="cookie-banner-close">
+          <button id="accept">Zustimmen</button>
+        </span>
+      </div>
+      <div class="cookie-banner-buttons">
+        <div class="cookie-banner-details"></div>
+      </div>
+    </div>
+  </div>
 
-    $('.video').parent().click(function () {
-        if($(this).children(".video").get(0).paused){
-            $(this).children(".video").get(0).play();
-            $(this).children(".playpause").fadeOut();
-        }else{
-           $(this).children(".video").get(0).pause();
-            $(this).children(".playpause").fadeIn();
-        }
-    });
-});
-</script>
-<img src="https://adfarm1.adition.com/tagging?type=image&network=142&tag[AMP.Hoer_Frau]" width="1" height="1" />
-<img src="https://adfarm1.adition.com/tagging?type=image&network=142&tag[AMP.Hoer_Mann]" width="1" height="1" />
-  
+
+  <img src="https://adfarm1.adition.com/tagging?type=image&network=142&tag[AMP.Hoer_Frau]" width="1" height="1" />
+  <img src="https://adfarm1.adition.com/tagging?type=image&network=142&tag[AMP.Hoer_Mann]" width="1" height="1" />
+    
+
+
   <div class="bodyContent">
   <!-- Navigation -->
   <?php include('includes/menu.html') ?>
@@ -50,7 +53,6 @@
       <div class="col-1"></div>
       <div class="col-1">
         <h1>Das Signia NX verändert auch Ihr Leben!</h1>
-        <!--<div class="headline"><h2>...UND BIS ZU 44% SPAREN*</h2></div>-->
 
         <!-- Formular -->
         <form action="danke.php" method="post" id="form">
