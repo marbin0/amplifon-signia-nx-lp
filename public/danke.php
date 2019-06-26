@@ -238,9 +238,9 @@ obApi('track', 'Termin Anfragen');
   <footer>
     <p>© Amplifon Deutschland GmbH 2019</p>
     <div class="hotline">
-                <a href="tel:0800620055">
+                <a href="tel:08006764767">
                     <h3><img class="phone" src="assets/img/icn_phone.svg" alt="">
-                        0800 - 620 05 55
+                      0800 - 676 47 67
                     </h3>
                 </a>
                 <p class="sternchen">Mo.-Fr. 08:00 – 20:00 Uhr || Sa. 09:00 – 15:00 Uhr</p>

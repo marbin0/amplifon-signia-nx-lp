@@ -21,19 +21,8 @@
 
 <body>
 
-  <div class="cookie-banner">
-    <div class="cookie-banner-wrapper">
-      <div class="cookie-banner-content" data-link="https://www.amplifon.com/de/datenschutz">
-        <div class="cookie-content">Um unsere Webseite für Sie optimal zu gestalten und fortlaufend zu verbessern, verwenden wir Cookies. Um einen uneingeschränkten Service zu gewährleisten,  stimmen Sie der Cookie-Nutzung zu. Mehr Informationen erhalten Sie in der <a href="https://www.amplifon.com/de/datenschutz">Datenschutzerklärung</a></div>
-        <span class="cookie-banner-close">
-          <button id="accept">Zustimmen</button>
-        </span>
-      </div>
-      <div class="cookie-banner-buttons">
-        <div class="cookie-banner-details"></div>
-      </div>
-    </div>
-  </div>
+  <?php include('includes/cookie-banner.html') ?>
+
 
 
   <img src="https://adfarm1.adition.com/tagging?type=image&network=142&tag[AMP.Hoer_Frau]" width="1" height="1" />
