@@ -28,7 +28,7 @@
         "gulp-sourcemaps": "^2.6.4",
         "gulp-terser": "^1.2.0",
         "gulp-uglify": "^3.0.2",
-        "jquery-validation": "^1.18.0",
+        "jquery-validation": "^1.19.3",
         "scrollreveal": "^3.3.6"
     },
     "dependencies": {
